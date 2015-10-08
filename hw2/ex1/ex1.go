@@ -24,6 +24,7 @@ func main() {
 	n.Set(x)
 	one := new(big.Int)
 	// x^(p1p2p3) = 1 mod p
+	//order of x| order of p. order of p - p-1. We know the prime factors of p-1 (p11,p12,p13,2) so we just need to check those.
 	fmt.Println(p1.Exp(n, p1.Add(p1, big.NewInt(-1)), p))
 	fmt.Println()
 	fmt.Println(p2.Exp(n, p2.Add(p2, big.NewInt(-1)), p))
