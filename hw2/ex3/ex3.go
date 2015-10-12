@@ -15,7 +15,7 @@ func main() {
 	c := []int{346, 825, 55, 489, 69, 303, 60, 511, 807, 816, 299, 556, 142, 165, 459, 605, 76, 491, 997, 182, 144, 548, 991, 788, 222, 584, 410, 439, 403, 755, 986, 91, 990, 719, 833, 715, 611, 890, 78, 436, 63, 220, 32, 32, 49, 865, 909, 420, 60}
 	for i, k := range c {
 		//Decode our ciphertext
-		c[i] = (P + k - x[0]) % P
+		c[i] = (P + k - x[0]) % P //Add P to make sure it stays positive
 		//Increment our shift register
 		x = shiftReg(x)
 	}
@@ -27,6 +27,7 @@ func main() {
 func shiftReg(x []int) []int {
 	//Calculate y according to r3
 	y := (415*x[9] + 542*x[8] + 1049*x[7] + 188*x[6] + 663*x[5] + 587*x[4] + 354*x[3] + 58*x[2] + 337*x[1] + 450*x[0]) % P
+	//Shift values
 	x[0] = x[1]
 	x[1] = x[2]
 	x[2] = x[3]

@@ -1,0 +1,8 @@
+Sciper=251284
+Worked with (list all):
+Q1=453145125212349665712579778439491503028417976316487084136577817086747404558165621335552230186590598422443961013930745106388729112782521
+Q2a=[16, 20, 0, 11, 8, 19, 0, 19, 8, 21, 4, 11, 24]
+Q2b=the secret word is belabor
+Q3=first rule is you do not talk about contortionist
+Q4=the mighty secret word is blackballing
+Q5=edpohmc the message is encrypted by combining caesar and vigenere and the secret word is connotation
